@@ -15,7 +15,7 @@ const Events = () => {
   const { addToCart, cart } = useCart();
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
-  const [showAllEvents, setShowAllEvents] = useState(true); // New state to control whether to show all events or search results
+  const [showAllEvents, setShowAllEvents] = useState(true); // state to control whether to show all events or search results
 
   useEffect(() => {
     try {

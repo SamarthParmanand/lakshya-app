@@ -1,4 +1,4 @@
-/* Events.css */
+/* Events.module.css */
 .search-bar-container {
   display: flex;
   padding: 1rem 0 0 1rem;
@@ -40,7 +40,16 @@
 @media (max-width: 768px) {
   .search-bar-container {
     margin-bottom: 10px;
-    width: 73vw;
+    width: 70vw;
   }
+
+  
+#title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 
 }

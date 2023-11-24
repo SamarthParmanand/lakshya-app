@@ -8,13 +8,13 @@ const EventItem = ({ event, openModal }) => {
         <img src={event.picture} alt={event.name} className={classes["card-image"]} />
         <div className={classes["card-content"]}>
           <h2 className={classes["card-title"]}>{event.name}</h2>
-          <div id="date-price">
+          <div id={classes["date-price"]}>
             <p className={classes["card-date"]}>
               {new Date(event.datetime).toLocaleDateString()}
             </p>
             <p className={classes["card-price"]}>₹ {event.amount}</p>
           </div>
-          <button onClick={() => openModal(event)}>
+          <button className={classes['info-button']} onClick={() => openModal(event)}>
             Show More Info
           </button>
         </div>
